@@ -1,0 +1,46 @@
+name: ease_app
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+    sdk: ^3.6.1
+
+dependencies:
+    flutter:
+        sdk: flutter
+
+    cupertino_icons: ^1.0.8
+    flutter_blue_plus: ^1.35.2
+    flutter_local_notifications: ^18.0.1
+    permission_handler: ^11.0.1
+
+dev_dependencies:
+    flutter_test:
+        sdk: flutter
+    flutter_launcher_icons: ^0.13.1
+    flutter_lints: ^5.0.0
+
+flutter:
+    uses-material-design: true
+    fonts:
+        - family: SourceSans3
+          fonts:
+              - asset: assets/fonts/SourceSans3-Regular.ttf
+              - asset: assets/fonts/SourceSans3-Bold.ttf
+                weight: 700
+    assets:
+        - assets/fonts/
+        - assets/icons/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path_android: "assets/icons/icon_android.png"
+  image_path_ios: "assets/icons/icon_iOS.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFE0E0"
+  adaptive_icon_foreground: "assets/icons/icon_android.png"
+  remove_alpha_ios: true

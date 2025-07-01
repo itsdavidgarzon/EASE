@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, user-scalable=no"
+		/>
+		<title>Group 29 - EASE</title>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/favicon/favicon.ico?v=2" type="image/x-icon" />
+		<link rel="icon" href="images/favicon/favicon.png?v=2" type="image/png" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="images/favicon/apple-touch-icon.png?v=2"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="images/favicon/favicon-32x32.png?v=2"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="images/favicon/favicon-16x16.png?v=2"
+		/>
+		<link rel="manifest" href="images/favicon/site.webmanifest?v=2" />
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				const sections = document.querySelectorAll("section");
+				const observer = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((entry) => {
+							if (entry.isIntersecting) {
+								entry.target.classList.add("visible");
+							}
+						});
+					},
+					{ threshold: 0.1 }
+				);
+				sections.forEach((section) => observer.observe(section));
+			});
+		</script>
+	</head>
+	<body class="is-preload">
+		<!-- Hamburger Menu -->
+		<div id="headerToggle">
+			<a href="#header" class="toggle"><span class="fas fa-bars"></span></a>
+		</div>
+
+		<!-- Sidebar Navigation -->
+		<header id="header">
+			<div class="top">
+				<div id="logo">
+					<h1>EASE</h1>
+					<p>Group 29</p>
+				</div>
+				<nav id="nav">
+					<ul>
+						<li>
+							<a href="#top"
+								><span class="icon solid fa-home">Top of Page</span></a
+							>
+						</li>
+						<li>
+							<a href="#about"
+								><span class="icon solid fa-question"
+									>About our Project</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="#team"
+								><span class="icon solid fa-users">Meet the Team</span></a
+							>
+						</li>
+						<li>
+							<a href="#committee"
+								><span class="icon solid fa-user-friends"
+									>Committee & Advisors</span
+								></a
+							>
+						</li>
+						<li>
+							<a href="#sponsors"
+								><span class="icon solid fa-user-tie">Sponsors</span></a
+							>
+						</li>
+						<li>
+							<a href="#documentation"
+								><span class="icon solid fa-file-alt">Documentation</span></a
+							>
+						</li>
+						<li>
+							<a href="#videos"
+								><span class="icon solid fa-video">Videos</span></a
+							>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Main Content -->
+		<main id="main">
+			<!-- Intro -->
+			<section id="top" class="one dark cover">
+				<div class="container">
+					<header>
+						<h2 class="alt">
+							<strong>EASE</strong><br />Notifying Feminine Hygiene Pad
+						</h2>
+						<p>Group 29: Senior Design Project</p>
+					</header>
+					<footer><a href="#about" class="button scrolly">Learn more</a></footer>
+				</div>
+			</section>
+
+			<!-- About -->
+			<section id="about" class="two">
+				<div class="container">
+					<header><h2>Our Project</h2></header>
+					<p>
+						The EASE project centers around a system that alerts its user when
+						their menstrual product is at or near capacity. Our team is developing
+						the sensor, transmitter, PCB/integration, and alert system.
+					</p>
+				</div>
+			</section>
+
+			<!-- Team -->
+			<section id="team" class="three">
+				<div class="container">
+					<header><h2>Our Team</h2></header>
+					<div class="team-container">
+						<div class="card-flip">
+							<div class="team-member card-inner">
+								<div class="card-front">
+									<img
+										src="images/headshots/Alex.png"
+										alt="Alexander Nguyen"
+									/>
+									<p>Alexander Nguyen</p>
+									<em>Electrical Engineer</em>
+								</div>
+								<div class="card-back">
+									<p>Alex loves the gym. And food. And they love Alex!</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-flip">
+							<div class="team-member card-inner">
+								<div class="card-front">
+									<img
+										src="images/headshots/Dillon.png"
+										alt="Dillon Sardarsingh"
+									/>
+									<p>Dillon Sardarsingh</p>
+									<em>Electrical Engineer</em>
+								</div>
+								<div class="card-back">
+									<p>
+										Dillon is so cool that he actually inspired the word
+										(true)!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-flip">
+							<div class="team-member card-inner">
+								<div class="card-front">
+									<img
+										src="images/headshots/Matthew.png"
+										alt="Matthew Poole"
+									/>
+									<p>Matthew Poole</p>
+									<em>Electrical Engineer</em>
+								</div>
+								<div class="card-back">
+									<p>Matthew! Oh what a joy Matthew is!</p>
+								</div>
+							</div>
+						</div>
+						<div class="card-flip">
+							<div class="team-member card-inner">
+								<div class="card-front">
+									<img src="images/headshots/David.png" alt="David Garzon" />
+									<p>David Garzon</p>
+									<em>Computer Engineer</em>
+								</div>
+								<div class="card-back">
+									<p>David loves Snoopy! He hopes Snoopy loves him too.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Committee & Advisors -->
+			<section id="committee" class="four">
+				<div class="container">
+					<header><h2>Committee & Advisors</h2></header>
+					<div class="committee-container">
+						<div class="committee-member">
+							<p>Dr. Mark Maddox</p>
+							<em>Committee</em>
+						</div>
+						<div class="committee-member">
+							<p>Dr. Saleem Sahawneh</p>
+							<em>Committee</em>
+						</div>
+						<div class="committee-member">
+							<p>Dr. Elizabeth Coln</p>
+							<em>Committee</em>
+						</div>
+						<div class="committee-member">
+							<p>Dr. Lei Wei</p>
+							<em>Advisor</em>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Sponsors -->
+			<section id="sponsors" class="five">
+				<div class="container">
+					<header><h2>Sponsors</h2></header>
+					<div class="sponsor-container">
+						<div class="sponsor-member">
+							<p>JLCPCB</p>
+							<em>Sponsor</em>
+						</div>
+						<div class="sponsor-member">
+							<p>Gabriela Mercado</p>
+							<em>Sponsor</em>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Documentation -->
+			<section id="documentation" class="six">
+				<div class="container">
+					<header><h2>Documentation</h2></header>
+					<div class="document-grid">
+						<div class="document-card">
+							<a href="docs/D&C_Document.pdf" download>Divide & Conquer</a>
+						</div>
+						<div class="document-card">
+							<a href="docs/SD1_Final_Report.pdf" download>SD1 Final Report</a>
+						</div>
+						<div class="document-card">
+							<a href="docs/8_Page_Conference_Paper.pdf" download
+								>8-Page Conference Paper</a
+							>
+						</div>
+						<div class="document-card">
+							<a href="docs/SD2_Final_Report.pdf" download>SD2 Final Report</a>
+						</div>
+						<div class="document-card">
+							<a href="docs/CDR_Presentation.pdf" download
+								>CDR Presentation Slides</a
+							>
+						</div>
+						<div class="document-card">
+							<a href="docs/Final_Presentation.pdf" download
+								>Final Presentation Slides</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Videos -->
+			<section id="videos" class="seven">
+				<div class="container">
+					<header><h2>Videos</h2></header>
+					<div class="document-grid">
+						<div class="video-wrapper">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/ddqvyIcHaC8?si=8nZiTJFZhVQTTsW4"
+								title="CDR_Presentation"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+						<div class="video-wrapper">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/uDr8vVXqDlQ?si=8V1JoIx5IS2D_4Ec"
+								title="Midterm Demo"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+						<div class="video-wrapper">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/WvLr1JiRLdU?si=GkEQgimmEd9A8vtk"
+								title="Final Presentation"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+						<div class="video-wrapper">
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/zN23K5zv5OY?si=g1D7-eL8mJceXF8-"
+								title="Final Demo"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								referrerpolicy="strict-origin-when-cross-origin"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<footer style="text-align: center; padding: 2em 0; font-size: 0.9em; color: #aaa">
+				Made with ❤️ by Group 29 · © 2025
+			</footer>
+		</main>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", () => {
+				document
+					.querySelector("#headerToggle .toggle")
+					.addEventListener("click", (e) => {
+						e.preventDefault();
+						document.body.classList.toggle("header-visible");
+					});
+			});
+		</script>
+	</body>
+</html>
